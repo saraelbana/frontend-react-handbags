@@ -1,12 +1,11 @@
 import './TextBlock.css';
-function TextBlock({title, text}) {
+function TextBlock({title, text}){
+
     return(
-        <h2 className="textBlock">
-            {title}
-        </h2>
-        <p>
-            {text}
-        </p>
+        <article>
+            <h2 className="textBlock">{title} </h2>
+            <p>{text}</p>
+        </article>
     )
 }
 export default TextBlock;
