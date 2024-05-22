@@ -1,10 +1,14 @@
-import 'Button.css';
+import './Button.css';
 
-function Button() {
-    return
-    (
-        <button className="button">
-            Click me!
+function Button({name, clickable}) {
+    let disableButton = true;
+    if(clickable === "true"){
+        disableButton = false;
+    }
+    else disableButton = true;
+    return(
+        <button className="button" disabled={disableButton} >
+            {name}
         </button>
     )
 }
